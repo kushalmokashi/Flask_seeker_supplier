@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+ <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')|autoversion}}" /> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dzon.css')|autoversion}}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styledropzone.css')|autoversion}}" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')|autoversion}}" />
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/jqtree.css')}}" /> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.json-view.css')}}" />
+  <title>Seekers and Suppliers</title>
+</head>
+
+<body>
+  <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"> -->
+  <!-- <form action="/" id="mdzn"></form>
+ -->
+  <!-- <form action="/"
+      class="dropzone"
+      id="my-awesome-dropzone"></form> -->
+    
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class = "rows">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <form id="heading">
+                <h1>kushal</h1>
+            </form>    
+          </div>
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="upload-view">
+            <form action="/"       class="dropzone"          id="mdzn">
+            </form>
+          </div>
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 hidden" id="file-view">
+            
+              <h3>Seekers and Suppliers List</h3>
+          
+            <div id="element">
+            </div>
+      
+          </div>
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <div id="map" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+      </div>
+    </div>
+    
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+  <!-- <script src="{{ url_for('static', filename='js/tree.jquery.js')}}"></script> -->
+  <script src="{{ url_for('static', filename='js/jquery.json-view.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/dropzone.js')}}" defer></script>
+  <script>var list = "{{seekers_suppliers_list}}";</script>
+  <script src="{{ url_for('static', filename='js/script.js')|autoversion }}" defer></script>
+
+</body>
+
+</html>
